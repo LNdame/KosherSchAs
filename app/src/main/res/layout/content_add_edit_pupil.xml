@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kosher.cct.schoolassess.view.pupil.AddEditPupil"
+    tools:showIn="@layout/activity_add_edit_pupil">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_edit_pupil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/realLayout1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/colorAccent"
+            tools:layout_editor_absoluteX="46dp">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/applogo" />
+
+            <TextView
+                android:text="Register/Edit a Pupil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="25dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:id="@+id/textView116"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/container"
+       >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TableRow
+
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:text="First name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:id="@+id/textView1"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:gravity="left"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtfirstname"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/edtgrade"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_marginTop="16dp"
+
+                    android:ems="10"
+                    android:hint="First name"
+                    android:inputType="textPersonName" />
+
+
+            </TableRow>
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="Surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:id="@+id/textView2"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:gravity="left"
+                    android:layout_margin="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/edtsurname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/edtfirstname"
+                    android:layout_below="@+id/edtfirstname"
+                    android:layout_marginTop="23dp"
+
+                    android:ems="10"
+                    android:hint="Surname"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="Grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:id="@+id/textView3"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:gravity="left"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/edtsurname"
+                    android:layout_marginTop="23dp"
+
+                    android:ems="10"
+                    android:hint="Grade"
+                    android:inputType="number" />
+                />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="Emis Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:id="@+id/textView4"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:gravity="left"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtEmis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/edtsurname"
+                    android:layout_marginTop="23dp"
+
+                    android:ems="10"
+                    android:hint="Grade"
+                    android:inputType="number" />
+                />
+
+
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:text="Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView5"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/spingender"
+
+
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:text="School"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView6"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/spinschool"
+
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+
+
+
+            <TableRow>
+                <TextView
+                    android:text="Date of Birth (dd/mm/yyyy)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView7"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_height="35dp">
+                    <TextView
+                        android:text="01/12/2008"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/txtdob"
+                        />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/imgcalendar"
+                        />
+
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:text="Does the child have \na Road to Health card?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:id="@+id/textView8"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radYes"
+
+                        android:layout_marginRight="32dp"/>
+
+                    <RadioButton
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radNo"
+
+                        android:layout_marginRight="16dp"
+                        android:paddingRight="8dp"/>
+                </RadioGroup>
+            </TableRow>
+
+
+
+
+                <TextView
+                    android:text="Register/Edit Parent or Guardian"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:id="@+id/textView9"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+
+
+
+
+            <TableRow>
+                <TextView
+                    android:text="First name of Parent/Guardian "
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView10"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+                <EditText
+                    android:id="@+id/edtnokfirstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/edtgrade"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_marginTop="16dp"
+
+                    android:ems="10"
+                    android:hint="First name"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:text="Surname of Parent/Guardian "
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView11"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+                <EditText
+                    android:id="@+id/edtnoksurname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/edtgrade"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_marginTop="16dp"
+
+                    android:ems="10"
+                    android:hint="First name"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Address line 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView12"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+                <EditText
+                    android:id="@+id/edtnokadd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/edtgrade"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_marginTop="16dp"
+
+                    android:ems="10"
+                    android:hint="First name"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Address line 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView13"
+                    android:padding="5dp"
+                    android:paddingTop="4dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:hint="First name"
+                    android:ems="10"
+                    android:id="@+id/edtnokadd2"
+
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignStart="@+id/edtgrade"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

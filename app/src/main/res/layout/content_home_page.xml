@@ -1,11 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.kosher.cct.schoolassess.view.home.HomePage"
     tools:showIn="@layout/app_bar_home_page">
 
-</android.support.constraint.ConstraintLayout>
+
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+
+            android:layout_gravity="center"
+            android:src="@drawable/applogo" />
+    </FrameLayout>
+
+    <com.kosher.cct.schoolassess.customview.DashboardLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/DashboardButton"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Pupil "
+            android:drawableTop="@mipmap/ic_register_pupil" />
+
+        <Button  android:id="@+id/btnRegisterSchool"
+            style="@style/DashboardButton"
+            android:text="School"
+            android:drawableTop="@mipmap/ic_register_school" />
+
+
+
+        <Button  android:id="@+id/btnSearch"
+            android:gravity="center"
+            style="@style/DashboardButton"
+            android:text="Assessment"
+            android:drawableTop="@mipmap/ic_assessment" />
+
+        <Button  android:id="@+id/btnExport"
+            style="@style/DashboardButton"
+            android:text="Export data "
+            android:drawableTop="@mipmap/ic_export" />
+
+
+
+    </com.kosher.cct.schoolassess.customview.DashboardLayout>
+
+</LinearLayout>

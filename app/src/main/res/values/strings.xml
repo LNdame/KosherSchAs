@@ -23,4 +23,6 @@
     <string name="title_activity_school_list">School List</string>
     <string name="title_activity_pupil_list">Pupil List</string>
     <string name="title_activity_add_edit_school">Add School</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_add_edit_pupil">Edit Pupil</string>
 </resources>
