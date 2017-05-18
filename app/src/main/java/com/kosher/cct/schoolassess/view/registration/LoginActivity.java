@@ -1,4 +1,4 @@
-package com.kosher.cct.schoolassess.registration;
+package com.kosher.cct.schoolassess.view.registration;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

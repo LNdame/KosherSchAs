@@ -23,7 +23,42 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".view.home.HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.home.HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.school.SchoolList"
+            android:label="@string/title_activity_school_list"
+            android:parentActivityName=".view.home.HomePage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kosher.cct.schoolassess.view.home.HomePage" />
+        </activity>
+        <activity
+            android:name=".view.pupil.PupilList"
+            android:label="@string/title_activity_pupil_list"
+            android:parentActivityName=".view.home.HomePage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kosher.cct.schoolassess.view.home.HomePage" />
+        </activity>
+        <activity
+            android:name=".view.school.AddEditSchool"
+            android:label="@string/title_activity_add_edit_school"
+            android:parentActivityName=".view.school.SchoolList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kosher.cct.schoolassess.view.school.SchoolList" />
+        </activity>
     </application>
 
 </manifest>
