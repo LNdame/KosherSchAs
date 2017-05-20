@@ -29,7 +29,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnRegisterPupil"
             style="@style/DashboardButton"
             android:layout_width="match_parent"
             android:gravity="center"
@@ -47,6 +47,7 @@
             android:gravity="center"
             style="@style/DashboardButton"
             android:text="Assessment"
+            android:onClick="startAssessment"
             android:drawableTop="@mipmap/ic_assessment" />
 
         <Button  android:id="@+id/btnExport"

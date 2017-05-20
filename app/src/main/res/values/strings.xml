@@ -25,4 +25,19 @@
     <string name="title_activity_add_edit_school">Add School</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_add_edit_pupil">Edit Pupil</string>
+
+    <string name="lostpwdlead">
+    Enter your email address and a email will be sent with a provisional password.
+    \nDo not forget to update your password on your next login</string>
+
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+
+    <string name="next">NEXT</string>
+    <string name="prev">PREVIOUS</string>
+    <string name="start">SAVE</string>
+    <string name="title_activity_oral_screening">Oral Screening</string>
 </resources>

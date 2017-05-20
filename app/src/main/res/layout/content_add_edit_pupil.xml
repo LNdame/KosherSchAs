@@ -1,53 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.kosher.cct.schoolassess.view.pupil.AddEditPupil"
     tools:showIn="@layout/activity_add_edit_pupil">
 
-
     <LinearLayout
+        android:id="@+id/realLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/colorAccent"
+        tools:layout_editor_absoluteX="46dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/applogo" />
+
+        <TextView
+            android:text="Register/Edit a Pupil"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/textView116"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="registerPatient"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/content_edit_pupil"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:id="@+id/realLayout1"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:background="@color/colorAccent"
-            tools:layout_editor_absoluteX="46dp">
+        >
 
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                app:srcCompat="@drawable/applogo" />
-
-            <TextView
-                android:text="Register/Edit a Pupil"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingLeft="25dp"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:id="@+id/textView116"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                />
-
-
-        </LinearLayout>
 
 
     <LinearLayout
@@ -58,6 +75,7 @@
        >
 
         <TableLayout
+            android:paddingRight="35dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -80,14 +98,15 @@
 
                 <EditText
                     android:id="@+id/edtfirstname"
-                    android:layout_width="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
                     android:layout_height="40dp"
                     android:layout_alignStart="@+id/edtgrade"
                     android:layout_alignTop="@+id/imageView3"
                     android:layout_marginTop="16dp"
-
+                    android:background="@drawable/write_text"
                     android:ems="10"
-                    android:hint="First name"
+
                     android:inputType="textPersonName" />
 
 
@@ -116,9 +135,9 @@
                     android:layout_alignStart="@+id/edtfirstname"
                     android:layout_below="@+id/edtfirstname"
                     android:layout_marginTop="23dp"
-
+                    android:layout_weight="2"
                     android:ems="10"
-                    android:hint="Surname"
+                    android:background="@drawable/write_text"
                     android:inputType="textPersonName" />
 
             </TableRow>
@@ -144,9 +163,9 @@
                     android:layout_alignParentEnd="true"
                     android:layout_below="@+id/edtsurname"
                     android:layout_marginTop="23dp"
-
+                    android:layout_weight="2"
                     android:ems="10"
-                    android:hint="Grade"
+                    android:background="@drawable/write_text"
                     android:inputType="number" />
                 />
 
@@ -172,9 +191,9 @@
                     android:layout_alignParentEnd="true"
                     android:layout_below="@+id/edtsurname"
                     android:layout_marginTop="23dp"
-
+                    android:layout_weight="2"
                     android:ems="10"
-                    android:hint="Grade"
+                    android:background="@drawable/write_text"
                     android:inputType="number" />
                 />
 
@@ -199,7 +218,7 @@
                     android:layout_height="35dp"
                     android:id="@+id/spingender"
 
-
+                    android:layout_weight="2"
                     android:layout_margin="10dp"/>
 
             </TableRow>
@@ -222,7 +241,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:id="@+id/spinschool"
-
+                    android:layout_weight="2"
                     android:layout_margin="10dp"/>
 
             </TableRow>
@@ -242,6 +261,7 @@
                     />
 
                 <LinearLayout
+                    android:layout_weight="2"
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_margin="10dp"
@@ -344,9 +364,9 @@
                     android:layout_alignStart="@+id/edtgrade"
                     android:layout_alignTop="@+id/imageView3"
                     android:layout_marginTop="16dp"
-
+                    android:layout_weight="2"
                     android:ems="10"
-                    android:hint="First name"
+                    android:background="@drawable/write_text"
                     android:inputType="textPersonName" />
 
             </TableRow>
@@ -371,9 +391,9 @@
                     android:layout_alignStart="@+id/edtgrade"
                     android:layout_alignTop="@+id/imageView3"
                     android:layout_marginTop="16dp"
-
+                    android:layout_weight="2"
                     android:ems="10"
-                    android:hint="First name"
+                    android:background="@drawable/write_text"
                     android:inputType="textPersonName" />
 
             </TableRow>
@@ -397,9 +417,9 @@
                     android:layout_alignStart="@+id/edtgrade"
                     android:layout_alignTop="@+id/imageView3"
                     android:layout_marginTop="16dp"
-
+                    android:layout_weight="2"
                     android:ems="10"
-                    android:hint="First name"
+                    android:background="@drawable/write_text"
                     android:inputType="textPersonName" />
             </TableRow>
 
@@ -419,10 +439,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:inputType="textPersonName"
-                    android:hint="First name"
+                    android:background="@drawable/write_text"
                     android:ems="10"
                     android:id="@+id/edtnokadd2"
-
+                    android:layout_weight="2"
                     android:layout_alignTop="@+id/imageView3"
                     android:layout_marginTop="16dp"
                     android:layout_alignStart="@+id/edtgrade"/>
@@ -436,7 +456,7 @@
     </LinearLayout>
 
 
-    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 
 
@@ -445,4 +465,4 @@
 
 
 
-</android.support.v4.widget.NestedScrollView>
+</LinearLayout>
